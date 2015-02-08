@@ -8,8 +8,8 @@ from fabric.api import local, settings, shell_env
 
 
 DATA = {u'BLOG_AUTHOR': u'test',
- u'BLOG_DESCRIPTION': u'asdsa',
- u'BLOG_EMAIL': u'tes@te.de',
+ u'BLOG_DESCRIPTION': u'askjh',
+ u'BLOG_EMAIL': u'test@test.de',
  u'BLOG_TITLE': u'test'}
 
 
