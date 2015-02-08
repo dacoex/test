@@ -1,0 +1,10 @@
+branches:
+  only: [master]
+env:
+  global: {secure: eJ1UxQ0Ao1n76Q5ptb9U6XMQeuRfFqZliBBCNPtDALnumyKdTCMJV1NzbqUq3Ti0XqVc3wGkU7NtocJpMMscd8p1EF576cN2qVFWQl7gH2r4u/ecU3ViW9R23b+szKNOu6cziNul4xkegliGMzplz+BWi5Vv75eWEIciwmZkP7c=}
+install: ['wget https://github.com/getnikola/wheelhouse/archive/v2.7.zip', unzip v2.7.zip,
+  pip install --use-wheel --no-index --find-links=wheelhouse-2.7 lxml Pillow, rm -rf
+    wheelhouse-2.7 v2.7.zip, pip install fabric "nikola>=6.4.0" webassets]
+language: python
+python: ['2.7']
+script: fab -f travis_fabfile.py main
